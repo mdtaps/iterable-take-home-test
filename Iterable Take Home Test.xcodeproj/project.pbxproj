@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EA5A52D9263B61D20061274C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52D8263B61D20061274C /* AppDelegate.swift */; };
 		EA5A52DB263B61D20061274C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52DA263B61D20061274C /* SceneDelegate.swift */; };
-		EA5A52DD263B61D20061274C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52DC263B61D20061274C /* ViewController.swift */; };
+		EA5A52DD263B61D20061274C /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52DC263B61D20061274C /* UpdateProfileViewController.swift */; };
 		EA5A52E0263B61D30061274C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5A52DE263B61D30061274C /* Main.storyboard */; };
 		EA5A52E2263B61D40061274C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5A52E1263B61D40061274C /* Assets.xcassets */; };
 		EA5A52E5263B61D40061274C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5A52E3263B61D40061274C /* LaunchScreen.storyboard */; };
 		EA5A52F0263B61D50061274C /* Iterable_Take_Home_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52EF263B61D50061274C /* Iterable_Take_Home_TestTests.swift */; };
 		EA5A52FB263B61D50061274C /* Iterable_Take_Home_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A52FA263B61D50061274C /* Iterable_Take_Home_TestUITests.swift */; };
+		EA5A530D263B62330061274C /* IterableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = EA5A530C263B62330061274C /* IterableSDK */; };
+		EA5A5318263B62CE0061274C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A5317263B62CE0061274C /* NotificationService.swift */; };
+		EA5A531C263B62CE0061274C /* Iterable Notifications.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA5A5315263B62CE0061274C /* Iterable Notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +35,34 @@
 			remoteGlobalIDString = EA5A52D4263B61D20061274C;
 			remoteInfo = "Iterable Take Home Test";
 		};
+		EA5A531A263B62CE0061274C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5A52CD263B61D20061274C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5A5314263B62CE0061274C;
+			remoteInfo = "Iterable Notifications";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA5A5320263B62CE0061274C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA5A531C263B62CE0061274C /* Iterable Notifications.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA5A52D5263B61D20061274C /* Iterable Take Home Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iterable Take Home Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5A52D8263B61D20061274C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA5A52DA263B61D20061274C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA5A52DC263B61D20061274C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA5A52DC263B61D20061274C /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		EA5A52DF263B61D30061274C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA5A52E1263B61D40061274C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5A52E4263B61D40061274C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +73,9 @@
 		EA5A52F6263B61D50061274C /* Iterable Take Home TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Iterable Take Home TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5A52FA263B61D50061274C /* Iterable_Take_Home_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterable_Take_Home_TestUITests.swift; sourceTree = "<group>"; };
 		EA5A52FC263B61D50061274C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5A5315263B62CE0061274C /* Iterable Notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Iterable Notifications.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5A5317263B62CE0061274C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EA5A5319263B62CE0061274C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5A530D263B62330061274C /* IterableSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA5A5312263B62CE0061274C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +117,7 @@
 				EA5A52D7263B61D20061274C /* Iterable Take Home Test */,
 				EA5A52EE263B61D50061274C /* Iterable Take Home TestTests */,
 				EA5A52F9263B61D50061274C /* Iterable Take Home TestUITests */,
+				EA5A5316263B62CE0061274C /* Iterable Notifications */,
 				EA5A52D6263B61D20061274C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +128,7 @@
 				EA5A52D5263B61D20061274C /* Iterable Take Home Test.app */,
 				EA5A52EB263B61D50061274C /* Iterable Take Home TestTests.xctest */,
 				EA5A52F6263B61D50061274C /* Iterable Take Home TestUITests.xctest */,
+				EA5A5315263B62CE0061274C /* Iterable Notifications.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,7 +138,7 @@
 			children = (
 				EA5A52D8263B61D20061274C /* AppDelegate.swift */,
 				EA5A52DA263B61D20061274C /* SceneDelegate.swift */,
-				EA5A52DC263B61D20061274C /* ViewController.swift */,
+				EA5A52DC263B61D20061274C /* UpdateProfileViewController.swift */,
 				EA5A52DE263B61D30061274C /* Main.storyboard */,
 				EA5A52E1263B61D40061274C /* Assets.xcassets */,
 				EA5A52E3263B61D40061274C /* LaunchScreen.storyboard */,
@@ -128,6 +165,15 @@
 			path = "Iterable Take Home TestUITests";
 			sourceTree = "<group>";
 		};
+		EA5A5316263B62CE0061274C /* Iterable Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EA5A5317263B62CE0061274C /* NotificationService.swift */,
+				EA5A5319263B62CE0061274C /* Info.plist */,
+			);
+			path = "Iterable Notifications";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,12 +184,17 @@
 				EA5A52D1263B61D20061274C /* Sources */,
 				EA5A52D2263B61D20061274C /* Frameworks */,
 				EA5A52D3263B61D20061274C /* Resources */,
+				EA5A5320263B62CE0061274C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA5A531B263B62CE0061274C /* PBXTargetDependency */,
 			);
 			name = "Iterable Take Home Test";
+			packageProductDependencies = (
+				EA5A530C263B62330061274C /* IterableSDK */,
+			);
 			productName = "Iterable Take Home Test";
 			productReference = EA5A52D5263B61D20061274C /* Iterable Take Home Test.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +235,23 @@
 			productReference = EA5A52F6263B61D50061274C /* Iterable Take Home TestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EA5A5314263B62CE0061274C /* Iterable Notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5A531D263B62CE0061274C /* Build configuration list for PBXNativeTarget "Iterable Notifications" */;
+			buildPhases = (
+				EA5A5311263B62CE0061274C /* Sources */,
+				EA5A5312263B62CE0061274C /* Frameworks */,
+				EA5A5313263B62CE0061274C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Iterable Notifications";
+			productName = "Iterable Notifications";
+			productReference = EA5A5315263B62CE0061274C /* Iterable Notifications.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +272,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = EA5A52D4263B61D20061274C;
 					};
+					EA5A5314263B62CE0061274C = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = EA5A52D0263B61D20061274C /* Build configuration list for PBXProject "Iterable Take Home Test" */;
@@ -215,6 +286,9 @@
 				Base,
 			);
 			mainGroup = EA5A52CC263B61D20061274C;
+			packageReferences = (
+				EA5A530B263B62330061274C /* XCRemoteSwiftPackageReference "swift-sdk" */,
+			);
 			productRefGroup = EA5A52D6263B61D20061274C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +296,7 @@
 				EA5A52D4263B61D20061274C /* Iterable Take Home Test */,
 				EA5A52EA263B61D50061274C /* Iterable Take Home TestTests */,
 				EA5A52F5263B61D50061274C /* Iterable Take Home TestUITests */,
+				EA5A5314263B62CE0061274C /* Iterable Notifications */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +326,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA5A5313263B62CE0061274C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5A52DD263B61D20061274C /* ViewController.swift in Sources */,
+				EA5A52DD263B61D20061274C /* UpdateProfileViewController.swift in Sources */,
 				EA5A52D9263B61D20061274C /* AppDelegate.swift in Sources */,
 				EA5A52DB263B61D20061274C /* SceneDelegate.swift in Sources */,
 			);
@@ -280,6 +362,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA5A5311263B62CE0061274C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5A5318263B62CE0061274C /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = EA5A52D4263B61D20061274C /* Iterable Take Home Test */;
 			targetProxy = EA5A52F7263B61D50061274C /* PBXContainerItemProxy */;
+		};
+		EA5A531B263B62CE0061274C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5A5314263B62CE0061274C /* Iterable Notifications */;
+			targetProxy = EA5A531A263B62CE0061274C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +529,7 @@
 		EA5A5300263B61D50061274C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +549,7 @@
 		EA5A5301263B61D50061274C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +650,44 @@
 			};
 			name = Release;
 		};
+		EA5A531E263B62CE0061274C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGABW4X2P7;
+				INFOPLIST_FILE = "Iterable Notifications/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdtaps.Iterable-Take-Home-Test.Iterable-Notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5A531F263B62CE0061274C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGABW4X2P7;
+				INFOPLIST_FILE = "Iterable Notifications/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdtaps.Iterable-Take-Home-Test.Iterable-Notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,7 +727,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EA5A531D263B62CE0061274C /* Build configuration list for PBXNativeTarget "Iterable Notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5A531E263B62CE0061274C /* Debug */,
+				EA5A531F263B62CE0061274C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA5A530B263B62330061274C /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iterable/swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.21;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA5A530C263B62330061274C /* IterableSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA5A530B263B62330061274C /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = IterableSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA5A52CD263B61D20061274C /* Project object */;
 }
